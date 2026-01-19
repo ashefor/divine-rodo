@@ -82,7 +82,7 @@ export function Services() {
               >
                 <div className="relative h-full p-8 bg-zinc-900/50 backdrop-blur-sm border border-zinc-800 rounded-2xl overflow-hidden transition-all duration-300 hover:border-zinc-700">
                   {/* Gradient background on hover */}
-                  <div className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-300`} />
+                  <div aria-hidden="true" className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-300`} />
                   
                   <div className="relative z-10">
                     <div className={`inline-flex p-3 mb-6 bg-gradient-to-br ${service.gradient} rounded-xl`}>

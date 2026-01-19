@@ -48,8 +48,8 @@ export function ZoomParallax() {
           </div>
 
           {/* Decorative elements */}
-          <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-gradient-to-br from-amber-500/20 to-orange-500/20 rounded-full blur-3xl" />
-          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-full blur-3xl" />
+          <div aria-hidden="true" className="absolute top-1/4 left-1/4 w-64 h-64 bg-gradient-to-br from-amber-500/20 to-orange-500/20 rounded-full blur-3xl" />
+          <div aria-hidden="true" className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-full blur-3xl" />
         </motion.div>
       </div>
     </section>

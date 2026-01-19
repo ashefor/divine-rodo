@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, MotionValue } from "framer-motion";
 import { useRef } from "react";
 import Image from "next/image";
 
@@ -81,7 +81,7 @@ function PortfolioCard({
 }: {
   item: typeof portfolioItems[0];
   index: number;
-  scrollYProgress: any;
+  scrollYProgress: MotionValue<number>;
 }) {
   const cardRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress: cardScrollProgress } = useScroll({
@@ -135,7 +135,8 @@ function PortfolioCard({
 
       {/* Hover effect */}
       <motion.div
-        className="absolute inset-0 bg-gradient-to-br from-amber-500/20 to-orange-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-5"
+        aria-hidden="true"
+        className="absolute inset-0 bg-gradient-to-br from-amber-500/20 to-orange-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-[5]"
       />
     </motion.div>
   );
